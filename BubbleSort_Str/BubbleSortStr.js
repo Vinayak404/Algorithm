@@ -7,9 +7,9 @@
 * @version : 1.0
 * @since : 15-October-2019
 *******************************************************************************************************************/
-const SortN = require('../Utility/UtilitySearchSort')
+const SortN = require('../../Utility/UtilitySearchSort')
 let input = require('readline-sync')
-let x = input.question('Enter the size of array:')
+let x = input.questionInt('Enter the size of array:')
 let lis = []
 for (i = 0; i < x - 1; i++) {
     let a = input.question("enter the String List elements:")

@@ -7,9 +7,9 @@
 * @version : 1.0
 * @since : 16-October-2019
 *******************************************************************************************************************/
-const monthInst = require('../Utility/Utility')
+const monthInst = require('../Monthly_Payment/Monthly_PaymentBL')
 let input = require('readline-sync')
-let P = input.question('Enter the Principle amount:')
-let Y = input.question('Enter the payment period in years:')
-let R = input.question('Enter the Interest rate:')
+let P = input.questionInt('Enter the Principle amount:')
+let Y = input.questionInt('Enter the payment period in years:')
+let R = input.questionInt('Enter the Interest rate:')
 console.log(monthInst.emi(P, Y, R))

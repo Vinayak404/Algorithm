@@ -7,8 +7,8 @@
 * @version : 1.0
 * @since : 16-October-2019
 *******************************************************************************************************************/
-const TConv = require('../Utility/Utility')
+const TConv = require('../Temperature_Conversion/Temperature_ConversionBL')
 let input = require('readline-sync')
-let p = parseInt(input.question('Enter 1 for Celcius to Fahrenheit and 2 for Fahrenheit to Celcius:'))
-let temp = parseFloat(input.question('Enter the value of Temperature:'))
+let p = input.questionInt('Enter 1 for Celcius to Fahrenheit and 2 for Fahrenheit to Celcius:')
+let temp = input.questionFloat('Enter the value of Temperature:')
 TConv.TempConvert(p, temp)

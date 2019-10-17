@@ -1,6 +1,6 @@
-const pNum = require('../Utility/Utility')
+const pNum = require('./Utility_PrimeAnagramPalindrome')
 let input = require('readline-sync')
-let Num = input.question('Please Enter the Number to find prime numbers that are lesser:')
+let Num = input.questionInt('Please Enter the Number to find prime numbers that are lesser:')
 
 
 let plist = [];
@@ -11,6 +11,7 @@ for (let i = 0; i < Num; i++) {
 }
 
 console.log("Primes are", plist)
+//Anagram
 
 anagNums = (list1) => {
     var anList = []

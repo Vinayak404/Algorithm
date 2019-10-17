@@ -7,7 +7,7 @@
 * @version : 1.0
 * @since : 14-October-2019
 *******************************************************************************************************************/
-const Anag = require('../Utility/Utility');
+const Anag = require('../Prime_Anagram_palindrome/Utility_PrimeAnagramPalindrome');
 let input = require('readline-sync');
 let str1 = input.question('Please Enter the first string:')
 let str2 = input.question('Please Enter the second string:')

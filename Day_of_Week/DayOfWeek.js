@@ -7,11 +7,11 @@
 * @version : 1.0
 * @since : 16-October-2019
 *******************************************************************************************************************/
-const Weekday = require('../Utility/Utility')
+const Weekday = require('../Day_of_Week/DayOfWeekBL')
 let input = require('readline-sync')
-let d = parseInt(input.question("Enter the day:"));
-let m = parseInt(input.question("Enter the month:"));
-let y = parseInt(input.question("Enter the year:"));
+let d = input.questionInt("Enter the day:");
+let m = input.questionInt("Enter the month:");
+let y = input.questionInt("Enter the year:");
 if (0 < d <= 31 && 0 < m <= 12 && 0 < y <= 9999) {
     Weekday.dayOfWeek(d, m, y)
 }

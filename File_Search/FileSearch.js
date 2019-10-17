@@ -9,9 +9,9 @@
 *******************************************************************************************************************/
 const file = require('file-system');
 const fs = require('fs')
-const bSearch = require('../Utility/UtilitySearchSort')
+const bSearch = require('../../Utility/UtilitySearchSort')
 let input = require('readline-sync')
-text = fs.readFileSync('../Algorithm problems/Files/file.txt');
+text = fs.readFileSync('../File_Search/file.txt');
 let ip = text.toString().split(' ');
 let arr = ip.sort();
 console.log(arr);

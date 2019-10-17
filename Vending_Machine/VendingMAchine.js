@@ -7,7 +7,7 @@
 * @version : 1.0
 * @since : 16-October-2019
 *******************************************************************************************************************/
-const VM = require('../Utility/Utility')
+const VM = require('../Vending_Machine/VendingMachineBL')
 let input = require('readline-sync')
-num = input.question("please enter the amount:")
+num = input.questionInt("please enter the amount:")
 VM.VendingMachine(num)
